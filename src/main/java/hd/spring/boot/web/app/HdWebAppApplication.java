@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @AutoConfigurationPackage
-@ComponentScan({ "hd.spring.boot.web.controllers" })
+@ComponentScan({ "hd.spring.boot.web.controllers", "hd.spring.boot.web.exceptions" })
 public class HdWebAppApplication {
 
 	public static void main(String[] args) {

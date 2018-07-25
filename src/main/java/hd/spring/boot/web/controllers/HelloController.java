@@ -1,7 +1,5 @@
 package hd.spring.boot.web.controllers;
 
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,4 +11,11 @@ public class HelloController {
 	public String index() {
 		return "Hello World";
 	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/null")
+	public String exc() {
+		int i = 1 / 0;
+		return "Hello World";
+	}
+
 }
