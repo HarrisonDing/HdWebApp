@@ -37,6 +37,13 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-freemarker
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: springVersion
 	
+	// Add for jsp integration
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: springVersion
+	// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+	compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.10'
+	
+	
 
 	//compile('org.springframework.boot:spring-boot-starter-web')
 	//runtime('org.springframework.boot:spring-boot-devtools')
@@ -48,4 +55,9 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
     testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '3.0.2'
+    
+    // https://mvnrepository.com/artifact/io.cucumber/gherkin-jvm-deps
+// cp the jar into gherkin * eb7, to make tomcat no error
+	testCompile group: 'io.cucumber', name: 'gherkin-jvm-deps', version: '1.0.4'
+    
 }

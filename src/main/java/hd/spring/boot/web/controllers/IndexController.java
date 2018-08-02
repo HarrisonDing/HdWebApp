@@ -23,4 +23,9 @@ public class IndexController {
 		map.put("userList", userList);
 		return "index";
 	}
+
+	@RequestMapping("/jspind")
+	public String jspind() {
+		return "jspind";
+	}
 }
