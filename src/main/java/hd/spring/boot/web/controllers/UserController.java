@@ -23,6 +23,7 @@ public class UserController {
 		userService.createUser("Harrison-" + System.currentTimeMillis(), 18);
 		return "success";
 	}
+<<<<<<< .mine
 
 	// http://localhost:8080/getuser?name=Harrison-1533392050650
 	@ResponseBody
@@ -30,4 +31,13 @@ public class UserController {
 	public UserEntity getUser(String name) {
 		return userMapper.findUser(name);
 	}
+=======
+
+	@ResponseBody
+	@RequestMapping("/getuser")
+	public UserEntity getUser(String name) {
+		return userMapper.findUser(name);
+	}
+
+>>>>>>> .theirs
 }
