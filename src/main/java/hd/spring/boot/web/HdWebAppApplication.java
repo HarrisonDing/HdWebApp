@@ -1,4 +1,4 @@
-package hd.spring.boot.web.app;
+package hd.spring.boot.web;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,9 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-// @AutoConfigurationPackage
-// @ComponentScan({ "hd.spring.boot.web.controllers",
-// "hd.spring.boot.web.exceptions" })
 @ComponentScan(basePackages = "hd.spring.boot.web")
 @MapperScan(basePackages = "hd.spring.boot.web.mapper")
 @EnableAutoConfiguration

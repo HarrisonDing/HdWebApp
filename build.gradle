@@ -58,8 +58,11 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.ehcache/ehcache
 	compile group: 'org.ehcache', name: 'ehcache', version: '3.5.2'
 
-	// https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
-	compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+	// https://mvnrepository.com/artifact/ch.qos.logback/logback-core
+	compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+	
+	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 
 	//compile('org.springframework.boot:spring-boot-starter-web')
 	//runtime('org.springframework.boot:spring-boot-devtools')
@@ -68,6 +71,8 @@ dependencies {
 	// https://mvnrepository.com/artifact/io.cucumber/cucumber-spring
     compile group: 'io.cucumber', name: 'cucumber-spring', version: '3.0.2'
 
+	
+	// Following for test zone
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
     testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '3.0.2'
@@ -75,5 +80,15 @@ dependencies {
     // https://mvnrepository.com/artifact/io.cucumber/gherkin-jvm-deps
 // cp the jar into gherkin * eb7, to make tomcat no error
 	testCompile group: 'io.cucumber', name: 'gherkin-jvm-deps', version: '1.0.4'
-    
+// https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+	testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 }
+
+
+//compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: springVersion
+// It use to exclude something
+//configurations {
+//	all {
+//		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+//	}
+//}

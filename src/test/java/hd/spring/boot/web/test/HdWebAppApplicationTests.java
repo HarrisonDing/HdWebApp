@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import hd.spring.boot.web.app.HdWebAppApplication;
+import hd.spring.boot.web.HdWebAppApplication;
 
 @RunWith(SpringRunner.class)
 @WebAppConfiguration
